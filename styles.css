@@ -1,0 +1,366 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #ff4747;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('roblox_background.png'); /* Hier dein Bild einfügen */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    padding: 60px;
+    text-align: center;
+    background-color: #fffae5;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Team Section */
+.Team {
+    padding: 60px;
+    text-align: center;
+    background-color: #fffae5;
+}
+
+.Team-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.Team h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Team p {
+    font-size: 18px;
+    color: #666;
+}
+/* Social-Media Section */
+.Social-Media {
+    padding: 60px;
+    text-align: center;
+    background-color: #fffae5;
+}
+
+.Social-Media-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.Social-Media h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Social-Media p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Games Section */
+.games {
+    background-color: #f3f9ff;
+    padding: 60px;
+    text-align: center;
+}
+
+.games h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.game-card {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+html {
+    scroll-behavior: smooth;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo {
+    text-decoration: none;
+    color: inherit; /* Beibehaltung der Schriftfarbe */
+    cursor: pointer;
+}
+/* Standard Desktop Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF4A4A;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    /* Anpassung der Hero Section für mobile Geräte */
+    .hero-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    /* Schriftgröße in den Abschnitten anpassen */
+    .about-content, .Team-content, .Social-Media-content, .games {
+        padding: 20px;
+        font-size: 0.9em;
+    }
+}
+
+/* Sehr kleine Bildschirme */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .game-cards h3 {
+        font-size: 1em;
+    }
+}
+/* Desktop Styles */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-items {
+    display: flex;
+}
+
+/* Mobile Dropdown Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-items {
+        display: none;
+        flex-direction: column;
+        background-color: #ff4747;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Höhe des Headers berücksichtigen */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .menu-items a {
+        padding: 10px 20px;
+        border-top: 1px solid #ffcc00;
+    }
+
+    .menu-items a:hover {
+        color: #ffd700;
+    }
+
+    .menu-items.show {
+        display: flex;
+    }
+}
+
+
