@@ -153,6 +153,49 @@ nav a:hover {
     color: #666;
 }
 
+/* Updates Section */
+.Updates {
+    padding: 60px;
+    text-align: center;
+    background-color: #fffae5;
+}
+
+.Updates-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.Updates h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Updates p {
+    font-size: 18px;
+    color: #666;
+}/* Sneak-peeks-content Section */
+.Sneak-peeks {
+    padding: 60px;
+    text-align: center;
+    background-color: #fffae5;
+}
+
+.Sneak-peeks-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.Sneak-peeks h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Sneak-peeks p {
+    font-size: 18px;
+    color: #666;
+}
 /* Games Section */
 .games {
     background-color: #f3f9ff;

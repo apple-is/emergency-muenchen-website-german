@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roblox Entwickler - Über mich</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <header>
@@ -16,6 +17,8 @@
             <div class="menu-items">
                 <a href="#home">Home</a>
                 <a href="#about" id="aboutLink">Über Uns</a>
+                <a href="#Updates" id="UpdatesLink">Updates</a>
+                <a href="#Sneak-peeks" id="Sneak-peeksLink">Sneak-peeks</a>
                 <a href="#Team" id="TeamLink">Entwickler Team</a>
                 <a href="#Social-Media" id="Social-MediaLink">Social-Media</a>
                 <a href="#games" id="gamesLink">Meine Spiele</a>
@@ -58,6 +61,41 @@
                     
                     Begleite uns auf unserem Weg, einzigartige Spiele zu entwickeln und die Gaming-Welt zu bereichern. Folge uns auf unseren Social-Media-Kanälen und werde Teil unserer Community. Gemeinsam können wir die Zukunft des Gaming gestalten!</p>
             </div>
+            <section class="Updates" id="Updates">
+                <div class="Updates-content">
+                    <h2>Vom Spiel die Updates:</h2>
+                    <p>
+                       Das Spiel ist noch nicht Online 
+                    </p>
+                </div>
+            </section>
+            <section class="Sneak-peeks" id="Sneak-peeks">
+                <div class="Sneak-peeks-content">
+                    <h2>Vom Spiel die Sneak-peeks</h2>
+                    <p>
+                        <img id="wechselBild" src="image1.png" alt="Wechselndes Bild">
+                    </p>
+                </div>
+            </section>
+            <script>
+                // Array mit den Bild-URLs
+                const bilder = [
+                    "image1.png",
+                    "image2.png"
+                ];
+        
+                // Startbild auf Index 0
+                let aktuellesBildIndex = 0;
+        
+                // Funktion, die das Bild wechselt
+                function bildWechseln() {
+                    aktuellesBildIndex = (aktuellesBildIndex + 1) % bilder.length; // Durchläuft die Bilder im Kreis
+                    document.getElementById("wechselBild").src = bilder[aktuellesBildIndex];
+                }
+        
+                // Bildwechsel alle 10 Sekunden (10.000 Millisekunden)
+                setInterval(bildWechseln, 5500);
+            </script>
         </section>
         <section class="Team" id="Team">
             <div class="Team-content">
@@ -107,9 +145,12 @@
         <div class="footer-links">
             <a href="#home">Home</a>
             <a href="#about" id="aboutLink">Über Uns</a>
+            <a href="#Updates" id="UpdatesLink">Updates</a>
+            <a href="#Sneak-peeks" id="Sneak-peeksLink">Sneak-peeks</a>
             <a href="https://www.roblox.com/de/groups/34886587/Emergency-M-nchen#!/about">Gruppe beitreten</a>
         </div>
     </footer>
+    
 
     <script src="script.js"></script>
 </body>
