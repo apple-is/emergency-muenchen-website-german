@@ -406,4 +406,39 @@ nav a:hover {
     }
 }
 
+/* Für kleinere Geräte wie Handys */
+@media screen and (max-width: 768px) {
+    /* Anpassungen für Bilder */
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Anpassungen für das Drop-Down-Menü */
+    .menu {
+        font-size: 14px;
+    }
+
+    /* Für die Pfeilwechselbilder */
+    .slider {
+        width: 100%;
+        height: auto;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    .button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .text-content {
+        font-size: 14px;
+    }
+}
+
+
 
